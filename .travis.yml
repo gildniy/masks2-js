@@ -3,3 +3,11 @@ node_js:
 - node
 before_deploy:
 - npm run build
+deploy:
+  provider: npm
+  email: gildniy05@gmail.com
+  api_key:
+    secure: bcGUdOYjrJ5jTaR2CZGVMoRJ5MmwBx8KTFe03u2rRR4S558k5k6cQkhw4ITMtcG5CBLrLTuFzdnpBm0BZziNJt5cqeCcH1CY+VgOhgV77WS7F9SNDk8ueC5rA3oZIDuBFUOyI0axwRnnnxN0SdaPz5P2XXurIq4s8YqvUTxjfUgKzMenSFNB9YDnu1x2VkxZ5a3yicwGE/8nA820klEPSai3eDvUXNkwfjqgxz1u5DaVAkvJbUeCvR8Fj0nQ1ozzaxVxfWsLj1lYGXZA38feS4DY0TC6wCq/qVQ7G0ul1Ygm2JnAUog0fgKkTyK/2Ku/oPFDY573dzfzuW+RqhxaIZiqsu33HU+j267YKaL3ZNPCI+vVaW8pL4X9wYvPJ08i5aIAllvEPtrmc2OCwH2kkQRbQfyzb8RxlKF8/YuSBiRa460VMSrUTD7N+D4bSeWEotx4Q/gEIH6f9CLgyJldtv8pO561g2rsU5PQDWrIHYONU4KUdcWtf7F3ZDMmsV6zglat6abesZKseuyuDFhBu7OyYINVHwqdtMugvkBS0jo+dOni31M01GA6/Y6thhlsaqBITE+Sp52hURFlkV9kLiK5TFzplcgJsOUxVU3Ib/vaSNv5qc5CUsaQcoWlWzfskuA6we531U4SiE2mhXFUHD2HeuagknXelabkwnelk9Q=
+  on:
+    tags: true
+    repo: gildniy/masks2-js
