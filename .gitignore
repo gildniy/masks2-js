@@ -57,3 +57,10 @@ typings/
 # dotenv environment variables file
 .env
 
+.idea/inspectionProfiles/
+.idea/masks-js.iml
+.idea/modules.xml
+.idea/workspace.xml
+
+.vscode/
+lib/

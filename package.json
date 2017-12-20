@@ -1,0 +1,43 @@
+{
+  "name": "masks2-js",
+  "version": "0.0.1",
+  "description": "A NPM package that exports functions to mask values.",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "npm run lint && babel ./src -d ./lib",
+    "lint": "eslint ./src",
+    "test": "nyc mocha --require babel-core/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gildniy/masks2-js.git"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "masks",
+    "javascript"
+  ],
+  "author": "Gildas Niyigena",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gildniy/masks2-js/issues"
+  },
+  "homepage": "https://github.com/gildniy/masks2-js#readme",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^4.0.1",
+    "nyc": "^11.4.1"
+  }
+}
